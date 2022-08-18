@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.0",
         "ext-json": "*",
         "ext-openssl": "*",
         "lcobucci/jwt": "^3.3",
