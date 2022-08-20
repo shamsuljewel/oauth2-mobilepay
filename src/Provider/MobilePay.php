@@ -11,7 +11,7 @@ use Lcobucci\JWT\ValidationData;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
-use Lcobucci\JWT\Parser;
+use Lcobucci\JWT\Token\Parser;
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
 use Throwable;
