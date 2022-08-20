@@ -15,6 +15,7 @@ use Lcobucci\JWT\Token\Parser;
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
 use Throwable;
+use Lcobucci\JWT\Encoding\JoseEncoder;
 
 class MobilePay extends AbstractProvider
 {
@@ -179,7 +180,7 @@ class MobilePay extends AbstractProvider
             throw new IdentityProviderException('Invalid response', 0, $data);
         }
 
-        $parser = new Parser();
+        $parser = new Parser(new JoseEncoder());
 
         $token = $parser->parse($data['id_token']);
 
